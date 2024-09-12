@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/article.css') }}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <a href="/" title="На главную">WHAT2do</a>
+            <img src="static/logo.png" alt="Logo" height="100px" weight="100px">
+            <input type="search" title="Type your problem here to find solution" />
+        </header>
+
+        <div class="menu">
+            <div>Main</div>
+            <div>Catalog</div>
+            <div>Common problems</div>
+            <div>One more menu</div>
+            <div>Ways to thank us</div>
+        </div>
+
+        <div class="articlearea">
+            <div></div>
+            <div class="article">
+                    <p>Article 1</p>
+                    <p> paragraph 1</p>
+                    <p> string 3</p>
+                    <p> string 4</p>
+            </div>
+            <div></div>
+        </div>
+    <footer>
+        <div class="footer__content">
+            <p>Contacts: {email}</p>
+            <p>Copyright © {Autors}, What2do, 2024. Все права защищены.</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
