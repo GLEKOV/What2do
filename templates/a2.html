@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/article2.css') }}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="top-bar">
+                <div class="tothemain"><a href="/" title="На главную">What2do</a></div>
+                <div class="logo"><img src="static/logo.png" alt="Logo" height="80px" weight="80px"></div>
+                <div class="search"><input type="search" title="Type your problem here to find solution" /></div>
+            </section>
+
+        </div>
+    </header>
+
+    <div class="menubackground">
+    <div class="container">
+        <section class="horizontalmenu">
+            <button onclick='location.href="/"' title="На главную" type="button" class="buttontomain">На главную</button>
+            <button>Каталог</button>
+            <button>Частые проблемы</button>
+            <button>Контакты</button>
+            <button>О сайте</button>
+            <button>Помощь сайту</button>
+        </section>
+    </div>
+    </div>
+
+
+    <section class="article">
+        <div class="container">
+            <div></div>
+            <div class="articlebody">
+                <h1>Article title for the 2nd article</h1>
+                <p>Article title and the rest of the article. Once upon a time there was an artocle about problems. The article
+                was very very big a person could say it was as large as a skyscrapper, but who would care if that was just
+                to test autofill function inside a flexbox - lets see what we got.</p>
+                <button>Clickable</button>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer__content">
+            <p>Contacts: {email}</p>
+            <p>Copyright © {Autors}, What2do, 2024. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', path='css/article.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/article2.css') }}"/>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <div id="container">
+    <header>
+        <div class="container">
+            <section class="top-bar">
+                <div class="tothemain"><a href="/" title="На главную">What2do</a></div>
+                <div class="logo"><img src="static/logo.png" alt="Logo" height="80px" weight="80px"></div>
+                <div class="search"><input type="search" title="Type your problem here to find solution" /></div>
+            </section>
 
-        <header>
-            <a href="/" title="На главную">WHAT2do</a>
-            <img src="static/logo.png" alt="Logo" height="100px" weight="100px">
-            <input type="search" title="Type your problem here to find solution" />
-        </header>
-
-        <div class="menu">
-            <div>Main</div>
-            <div>Catalog</div>
-            <div>Common problems</div>
-            <div>One more menu</div>
-            <div>Ways to thank us</div>
         </div>
+    </header>
 
-        <div class="articlearea">
+    <div class="menubackground">
+    <div class="container">
+        <section class="horizontalmenu">
+            <button onclick='location.href="/"' title="На главную" type="button" class="buttontomain">На главную</button>
+            <button>Каталог</button>
+            <button>Частые проблемы</button>
+            <button>Контакты</button>
+            <button>О сайте</button>
+            <button>Помощь сайту</button>
+        </section>
+    </div>
+    </div>
+
+
+    <section class="article">
+        <div class="container">
             <div></div>
-            <div class="article">
-                    <p>Article 1</p>
-                    <p> paragraph 1</p>
-                    <p> string 3</p>
-                    <p> string 4</p>
+            <div class="articlebody">
+                <h1>Article title for the 1st article</h1>
+                <p>FIRST ARTICLE is just a copy of the 2nd one - who would have thought? but here we are...
+                anyways - who cares - lets go!</p>
+                <p>Article title and the rest of the article. Once upon a time there was an artocle about problems. The article
+                was very very big a person could say it was as large as a skyscrapper, but who would care if that was just
+                to test autofill function inside a flexbox - lets see what we got.</p>
+                <button>Clickable</button>
             </div>
             <div></div>
         </div>
+    </section>
+
+
     <footer>
         <div class="footer__content">
             <p>Contacts: {email}</p>
             <p>Copyright © {Autors}, What2do, 2024. Все права защищены.</p>
         </div>
     </footer>
-    </div>
 </body>
 </html>

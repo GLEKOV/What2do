@@ -21,3 +21,7 @@ async def name(request: Request):
 @router.get('/a1', response_class=HTMLResponse)
 async def name(request: Request):
     return templates.TemplateResponse("a1.html", {"request": request})
+
+@router.get('/a2', response_class=HTMLResponse)
+async def name(request: Request):
+    return templates.TemplateResponse("a2.html", {"request": request})
